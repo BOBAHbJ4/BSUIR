@@ -51,7 +51,7 @@ h1 {
     -o-box-sizing: border-box;
     box-sizing: border-box; }
 
-.wrapper {
+    .wrapper {
         background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
         background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
         background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
@@ -62,7 +62,8 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    display: flex; }
+    display: flex; 
+	/*margin-bottom: 2.9rem;*/}
 	
 .section-header {
 	position: fixed; 
@@ -72,7 +73,7 @@ h1 {
 	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208))	
-	/*background: #52B3B6;*/
+	
 }
 .section-header .container {
     -webkit-box-pack: justify;
@@ -81,14 +82,16 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 60px 0; }
+    padding: 30px 0;
+    /*margin-bottom: 2.9rem;*/
+	}
 
 .section-header .logo {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;    
-    border: none;
+    display: flex;
     background: none;
+    border: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -141,7 +144,69 @@ h1 {
     color: #fafafa; }
 .section-header .nav-wrapper .nav-link:not(:first-child) {
     margin-left: 33px; }
+.section-slim_figure{
+	margin-top: 12rem;
+}
+/* Кнопка выпадающего списка */
+ .dropbtn {
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #1c0049;
+    background-color: none;
+    margin-left: 33px;
+    border: none;
+    font-size: 0;
+    padding-top: 20px;
+  }
+  .dropbtn:hover {
+    font-size: 2rem;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #66CCCC;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 35px;
+  }  
+  /* Ссылки внутри выпадающего списка */
+  .dropdown-content a {
+    color: #fff8f8;
+    padding: 3px 4px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+  }  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .dropdown-content a:hover {background-color: #E2FCF6; color: #1c0049;}
+  /* Показать выпадающее меню при наведении курсора */
+  .dropdown:hover .dropdown-content {display: block;}
+  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+  .dropdown:hover .dropbtn {color: #fff8f8;}    
 
+  /*Иконки вместо текста меню*/
+  .icon {
+    font-size: 0    ;
+    padding-top: 20px;
+    }
+
+    a:hover .icon {		
+        font-size: 2rem;
+    }
+	.nav-list img {
+		max-height: 30px;
+		background:none;
+	}
+	
+        /*END*/
 @media (max-width: 1279px) {
     .section-header .container {
         padding: 30px 30px 60px; } }
@@ -359,7 +424,6 @@ h1 {
         display: none; }
     .section-training .slider-buttons .btn:nth-child(2n) {
         margin: 0 10px; } }
-        margin: 0 0 40px 0; }
     .section-footer .info .contact-info__title {
         text-align: center; }
     .section-footer .info .contact-info .email-container {
@@ -368,19 +432,14 @@ h1 {
         margin-left: 11px; }
     .section-footer .info .location {
         margin: 0; }
-    .section-footer .info .location__title {
-        /*text-align: center; */}
     .section-footer__img {
         width: 260px;
-        height: 269px; } }
+        height: 269px; } 
 
 .section-footer {
 	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-	/*background: url(/assets/images/footer-background.png), -o-radial-gradient(5.73% 50%, 110.67% 538.64%, #513d2f 0%, #1a1a1c 100%), #211f20;
-    background: url(/assets/images/footer-background.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
-    background-size: cover; */
 	}
 .section-footer .container {
     display: -webkit-box;
