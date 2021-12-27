@@ -50,163 +50,97 @@ h1 {
 * {
     -o-box-sizing: border-box;
     box-sizing: border-box; }
-     
+
 .wrapper {
-    background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-    background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-    background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-    background-repeat: no-repeat;
-    background-size: cover;
+        background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
+        background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
+        background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
+        background-repeat: no-repeat;
+        background-size: cover;
 }
 
 .container {
-max-width: 1200px;
-margin: 0 auto;
-display: flex; 
-/*margin-bottom: 2.9rem;*/}
-
+    max-width: 1200px;
+    margin: 0 auto;
+	display: flex; }
+	
 .section-header {
-position: fixed; 
-overflow: hidden;
-top: 0; 
-width: 100%;
-background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
-background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208))	
-
+	position: fixed; 
+	overflow: hidden;
+	top: 0; 
+    width: 100%;
+	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
+    background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
+    background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208))	
+	/*background: #52B3B6;*/
 }
 .section-header .container {
--webkit-box-pack: justify;
--ms-flex-pack: justify;
-justify-content: space-between;
--webkit-box-align: center;
--ms-flex-align: center;
-align-items: center;
-padding: 30px 0;
-/*margin-bottom: 2.9rem;*/
-}
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 60px 0; }
 
 .section-header .logo {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-background: none;
-border: none;
--webkit-box-orient: vertical;
--webkit-box-direction: normal;
--ms-flex-direction: column;
-flex-direction: column; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    
+    border: none;
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
 
 .section-header .logo__title {
-font-family: Georgia, serif;
-font-size: 3.2rem;
-font-style: normal;
-font-weight: 400;
-line-height: 110%;
-letter-spacing: 0.06em;
-color: #ffffff;
-margin: 0 0 10px 0; }
+    font-family: Georgia, serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    margin: 0 0 10px 0; }
 
 .section-header .logo__subtitle {
-font-family: Arial, sans-serif;
-font-size: 1.7rem;
-font-style: normal;
-font-weight: 400;
-line-height: 15px;
-letter-spacing: 0.1em;
-color: #000000;
-margin-left: 4px; }
+    font-family: Arial, sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-left: 4px; }
 
 .section-header .nav-wrapper {
-display: -webkit-box;
-display: -ms-flexbox;
-display: flex;
-margin-right: 2px; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2px; }
 
 .section-header .nav-wrapper .nav-link {
-font-family: Arial, sans-serif;
-font-size: 1.5rem;
-font-style: normal;
-font-weight: 400;
-line-height: 160%;
-color: #1c0049;
-border-bottom: 3px solid transparent;
--webkit-transition: 0.3s;
--o-transition: 0.3s;
-transition: 0.3s;
-text-decoration: none;
-padding-bottom: 2px;
-cursor: pointer; }
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #1c0049;
+    border-bottom: 3px solid transparent;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+    padding-bottom: 2px;
+    cursor: pointer; }
 
 .section-header .nav-wrapper .nav-link.active, .section-header .nav-wrapper .nav-link:active {
-border-bottom: 3px solid #1c0049; }
+    border-bottom: 3px solid #1c0049; }
 .section-header .nav-wrapper .nav-link.active, .section-header .nav-wrapper .nav-link:hover {
-color: #fafafa; }
+    color: #fafafa; }
 .section-header .nav-wrapper .nav-link:not(:first-child) {
-margin-left: 33px; }
-.section-slim_figure{
-margin-top: 12rem;
-}
-/* Кнопка выпадающего списка */
-.dropbtn {
-font-family: Arial, sans-serif;
-font-style: normal;
-font-weight: 400;
-line-height: 160%;
-color: #1c0049;
-background-color: none;
-margin-left: 33px;
-border: none;
-font-size: 0;
-padding-top: 20px;
-}
-.dropbtn:hover {
-font-size: 2rem;
-}
-.dropdown {
-position: relative;
-display: inline-block;
-}
-.dropdown-content {
-display: none;
-position: absolute;
-background-color: #66CCCC;
-min-width: 100px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
-margin-left: 35px;
-}  
-/* Ссылки внутри выпадающего списка */
-.dropdown-content a {
-color: #fff8f8;
-padding: 3px 4px;
-text-decoration: none;
-display: block;
-font-size: 1.5rem;
-text-align: center;
-}  
-/* Изменение цвета выпадающих ссылок при наведении курсора */
-.dropdown-content a:hover {background-color: #E2FCF6; color: #1c0049;}
-/* Показать выпадающее меню при наведении курсора */
-.dropdown:hover .dropdown-content {display: block;}
-/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-.dropdown:hover .dropbtn {color: #fff8f8;}    
-
-/*Иконки вместо текста меню*/
-.icon {
-font-size: 0    ;
-padding-top: 20px;
-}
-
-a:hover .icon {		
-    font-size: 2rem;
-}
-.nav-list img {
-    max-height: 30px;
-    background:none;
-}
-
-    /*END*/
+    margin-left: 33px; }
 
 @media (max-width: 1279px) {
     .section-header .container {
@@ -425,6 +359,7 @@ a:hover .icon {
         display: none; }
     .section-training .slider-buttons .btn:nth-child(2n) {
         margin: 0 10px; } }
+        margin: 0 0 40px 0; }
     .section-footer .info .contact-info__title {
         text-align: center; }
     .section-footer .info .contact-info .email-container {
@@ -433,9 +368,11 @@ a:hover .icon {
         margin-left: 11px; }
     .section-footer .info .location {
         margin: 0; }
+    .section-footer .info .location__title {
+        /*text-align: center; */}
     .section-footer__img {
         width: 260px;
-        height: 269px; } 
+        height: 269px; } }
 
 .section-footer {
 	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
