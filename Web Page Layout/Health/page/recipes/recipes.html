@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>ПП рецепты</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/recipes.css">
+    <script src="../../assets/src/jquery.js"></script>
+    <script src="../../assets/src/main.js"></script>
 </head>
 
 <body>
@@ -16,9 +18,10 @@
         <div class="container">
             <form action="../../Index.html">
                 <button class="logo">
-                <h1 class="logo__title">Правильное Питание</h1>
-                <div class="logo__subtitle">Рационы питания и меню на неделю</div>
-                </button></form>
+                    <h1 class="logo__title">Правильное Питание</h1>
+                    <div class="logo__subtitle">Рационы питания и меню на неделю</div>
+                </button>
+            </form>
             <nav class="nav-wrapper">
                 <div class="hamburger-menu">
                     <div class="line line-1"></div>
@@ -36,63 +39,82 @@
         </div>
     </header>
     <!-- /Header -->
-<!-- Training -->
-<section class="section-training">
-    <div class="container">
-        <div class="section-training__title">Рецепты блюд<br/>
-             для приятного похудения</div>
-        <div class="training-slider">
-            <div class="slider-item">
-                <img src="assets/images/first_dishes.jpg" alt="first dishes" class="slider-item__img">
-                <div class="slider-item__nickname">Первые блюда</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+    <!-- Training -->
+    <section class="section-training">
+        <div class="container">
+            <div class="section-training__title">Рецепты блюд<br/>
+                для приятного похудения
             </div>
-            <div class="slider-item">
-                <img src="assets/images/second_dishes.jpg" alt="second dishes" class="slider-item__img">
-                <div class="slider-item__nickname">Вторые блюда</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+            <div class="training-slider">
+                <div class="slider-item">
+                    <img src="assets/images/first_dishes.jpg" id="1" alt="first dishes" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-1">Первые блюда</div>
+                    <button class="slider-item__btn" data-pic-id="1" type="button"
+                            data-content="text for first dishes...">Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/second_dishes.jpg" id="2" alt="second dishes" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-2">Вторые блюда</div>
+                    <button class="slider-item__btn" data-pic-id="2" type="button"
+                            data-content="text for second dishes...">Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/hot_dishes.jpg" id="3" alt="hot dishes" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-3">Горячие блюда</div>
+                    <button class="slider-item__btn" data-pic-id="3" type="button"
+                            data-content="text for hot dishes...">Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/side_dishes.jpg" id="4" alt="side dishes" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-4">Гарниры</div>
+                    <button class="slider-item__btn" data-pic-id="4" type="button"
+                            data-content="text for side dishes...">Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/salads.jpg" id="5" alt="salads" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-5">Салаты</div>
+                    <button class="slider-item__btn" data-pic-id="5" type="button" data-content="text for salads...">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/snacks.jpg" id="6" alt="snacks" class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-6">Закуски</div>
+                    <button class="slider-item__btn" data-pic-id="6" type="button" data-content="text for snacks...">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/Desserts_without_baking.jpg" id="7" alt="Desserts_without_baking"
+                         class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-7">Десерты без выпекания</div>
+                    <button class="slider-item__btn" data-pic-id="7" type="button"
+                            data-content="text for Desserts without baking...">Подробнее
+                    </button>
+                </div>
+                <div class="slider-item">
+                    <img src="assets/images/Desserts_with_baking.jpg" id="8" alt="Desserts with baking"
+                         class="slider-item__img">
+                    <div class="slider-item__nickname" id="item-8">Десерты с выпеканием</div>
+                    <button class="slider-item__btn" data-pic-id="8" type="button"
+                            data-content="text for Desserts with baking...">Подробнее
+                    </button>
+                </div>
             </div>
-            <div class="slider-item">
-                <img src="assets/images/hot_dishes.jpg" alt="hot dishes" class="slider-item__img">
-                <div class="slider-item__nickname">Горячие блюда</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
-            </div>
-            <div class="slider-item">
-                <img src="assets/images/side_dishes.jpg" alt="side dishes" class="slider-item__img">
-                <div class="slider-item__nickname">Гарниры</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
-            </div>
-            <div class="slider-item">
-                <img src="assets/images/salads.jpg" alt="salads" class="slider-item__img">
-                <div class="slider-item__nickname">Салаты</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
-            </div>
-            <div class="slider-item">
-                <img src="assets/images/snacks.jpg" alt="snacks" class="slider-item__img">
-                <div class="slider-item__nickname">Закуски</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
-            </div>
-            <div class="slider-item">
-                <img src="assets/images/Desserts_without_baking.jpg" alt="Desserts_without_baking" class="slider-item__img">
-                <div class="slider-item__nickname">Десерты без выпекания</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
-            </div>
-            <div class="slider-item">
-                <img src="assets/images/Desserts_with_baking.jpg" alt="Desserts with baking" class="slider-item__img">
-                <div class="slider-item__nickname">Десерты с выпеканием</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+            <div class="slider-buttons">
+                <button class="double-prev btn disable" type="button" disabled>&lt&lt</button>
+                <button class="prev btn disable" type="button" disabled>&lt</button>
+                <button class="page btn" type="button">1</button>
+                <button class="next btn" type="button">&gt</button>
+                <button class="double-next btn" type="button">&gt&gt</button>
             </div>
         </div>
-        <div class="slider-buttons">
-            <button class="double-prev btn disable" type="button" disabled>&lt&lt</button>
-            <button class="prev btn disable" type="button" disabled>&lt</button>
-            <button class="page btn" type="button">1</button>
-            <button class="next btn" type="button">&gt</button>
-            <button class="double-next btn" type="button">&gt&gt</button>
-        </div>
-    </div>
-</section>
-<!-- /Training -->
+    </section>
+    <!-- /Training -->
 </body>
 <!-- Footer -->
 <footer class="section-footer">
