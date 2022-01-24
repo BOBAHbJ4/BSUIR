@@ -7,6 +7,8 @@
     <title>Продукты</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/products.css">
+	<script src="../../assets/src/jquery.js"></script>
+    <script src="../../assets/src/main.js"></script>
 </head>
 
 <body>
@@ -26,11 +28,11 @@
                     <div class="line line-3"></div>
                 </div>
                 <div class="nav-list">
-                    <a class="nav-link" href="../../Index.html">Главная</a>
-                    <a class="nav-link active" href="">Продукты</a>
-                    <a class="nav-link" href="../recipes/recipes.html">Рецепты</a>
-                    <a class="nav-link" href="../diets/diets.html">Диеты</a>
-                    <a class="nav-link" href="../training/training.html">Тренировки</a>
+                    <a class="nav-link" href="../../Index.html"><img src="../../assets/icons/home.svg"><span class="icon">Главная</span></a>
+                    <a class="nav-link" href="#"><img src="../../assets/icons/products.svg"><span class="icon">Продукты</span></a>
+                    <a class="nav-link" href="../recipes/recipes.html"><img src="../../assets/icons/receipts.svg"><span class="icon">Рецепты</span></a>
+                    <a class="nav-link" href="../diets/diets.html"><img src="../../assets/icons/diets.svg"><span class="icon">Диеты</span></a>
+                    <a class="nav-link" href="../training/training.html"><img src="../../assets/icons/trainings.svg"><span class="icon">Тренировки</span></a>
                 </div>
             </nav>
         </div>
@@ -43,44 +45,52 @@
              приятного похудения</div>
         <div class="training-slider">
             <div class="slider-item">
-                <img src="assets/images/fructs.png" alt="fructs" class="slider-item__img">
-                <div class="slider-item__nickname">Фрукты</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/fructs.png" id="1" alt="fructs" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-1">Фрукты</div>
+                <button class="slider-item__btn" data-pic-id="1" type="button"
+                            data-content="text for fructs...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/vegetables.jfif" alt="vegetables" class="slider-item__img">
-                <div class="slider-item__nickname">Овощи</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/vegetables.jfif" id="2" alt="vegetables" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-2">Овощи</div>
+                <button class="slider-item__btn" data-pic-id="2" type="button"
+                            data-content="text for vegetables...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/proteins.jpg" alt="proteins" class="slider-item__img">
-                <div class="slider-item__nickname">Белки</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/proteins.jpg" id="3" alt="proteins" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-3">Белки</div>
+                <button class="slider-item__btn" data-pic-id="3" type="button"
+                            data-content="text for proteins...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/fats.jfif" alt="fats" class="slider-item__img">
-                <div class="slider-item__nickname">Жиры</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/fats.jfif" id="4" alt="fats" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-4">Жиры</div>
+                <button class="slider-item__btn" data-pic-id="4" type="button"
+                            data-content="text for fats...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/carbohydrates.jfif" alt="carbohydrates" class="slider-item__img">
-                <div class="slider-item__nickname">Углеводы</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/carbohydrates.jfif" id="5" alt="carbohydrates" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-5">Углеводы</div>
+                <button class="slider-item__btn" data-pic-id="5" type="button"
+					data-content="text for carbohydrates...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/crisp_bread.png" alt="bread crisp" class="slider-item__img">
-                <div class="slider-item__nickname">Хлебцы</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/crisp_bread.png" id="6" alt="bread crisp" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-6">Хлебцы</div>
+                <button class="slider-item__btn" data-pic-id="6" type="button"
+					data-content="text for bread crisp...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/sugar_substitutes.jpg" alt="Sugar substitutes" class="slider-item__img">
-                <div class="slider-item__nickname">Заменители сахара</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/sugar_substitutes.jpg" id="7" alt="Sugar substitutes" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-7">Заменители сахара</div>
+                <button class="slider-item__btn" data-pic-id="7" type="button"
+                            data-content="text for Sugar substitutes...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/jams.png" alt="jams" class="slider-item__img">
-                <div class="slider-item__nickname">Джемы</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/jams.png" id="8" alt="jams" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-8">Джемы</div>
+                <button class="slider-item__btn" data-pic-id="8" type="button"
+                            data-content="text for jams...">Подробнее</button>
             </div>
         </div>
         <div class="slider-buttons">
@@ -100,7 +110,7 @@
         <div class="info">
             <div class="contact-info">
                 <div class="contact-info__title">Вопросы и предложения</div>
-                <a href="https://mail.google.com/" target="_blank" class="email-container footer-hover">
+                <a href="mailto:spysystems.87@gmail.com" target="_blank" class="email-container footer-hover">
                     <img class="email-container__icon" src="../../assets/icons/footer-mail.svg" alt="mail-icon">
                     <div class="email-container__email">proper_nutrition@email.ru</div>
                 </a>

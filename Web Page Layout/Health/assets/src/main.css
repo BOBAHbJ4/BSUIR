@@ -74,7 +74,7 @@
 	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208))	
-	/*background: #52B3B6;*/
+	
 }
 .section-header .container {
     -webkit-box-pack: justify;
@@ -84,7 +84,6 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 30px 0;
-    /*margin-bottom: 2.9rem;*/
 	}
 
 .section-header .logo {
@@ -146,55 +145,14 @@
 .section-slim_figure{
 	margin-top: 13.5rem;
 }
-/* Кнопка выпадающего списка */
- .dropbtn {
-    font-family: Arial, sans-serif;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 160%;
-    color: #1c0049;
-    background-color: none;
-    margin-left: 33px;
-    border: none;
-  }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #66CCCC;
-    min-width: 100px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    margin-left: 35px;
-  }  
-  /* Ссылки внутри выпадающего списка */
-  .dropdown-content a {
-    color: #fff8f8;
-    padding: 3px 4px;
-    text-decoration: none;
-    display: block;
-    font-size: 1.5rem;
-    text-align: center;
-  }  
-  /* Изменение цвета выпадающих ссылок при наведении курсора */
-  .dropdown-content a:hover {background-color: #E2FCF6; color: #1c0049;}
-  /* Показать выпадающее меню при наведении курсора */
-  .dropdown:hover .dropdown-content {display: block;}
-  /* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
-  .dropdown:hover .dropbtn {color: #fff8f8;}    
 
   /*Иконки вместо текста меню*/
  .nav-link {
 	position: inline-block;
-    /*padding-top: 20px;*/
 	float:left;
 	max-width:60px;
     }
-img {
+.nav-link img {
 	margin-left: 30px
 	}
 	
@@ -202,14 +160,12 @@ img {
 	font-size: 0;
 } 
     a:hover .icon {		
-		/*background: #e2fcf6;*/
 		font-size: 1.8rem;
     }
 	.nav-list img {
 		max-height: 30px;
 		background:none;
-	}
-	
+	}	
         /*END*/
         /*FORM*/
 .titles{
@@ -376,6 +332,78 @@ option {
 }
 		/*END SELECT*/
 		/*END FORM*/
+		
+		/*Modal Window*/
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+	margin-top: 100px;
+    padding: 10px;
+	overflow: auto;
+    border: solid 1px grey;
+    background: #66CCCC;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px black;
+	-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    z-index: 1;
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+  from {top:-200px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-200px; opacity:0}
+  to {top:0; opacity:1}
+}
+/*Конец анимации*/
+.modal-window img {
+    width: 100%;
+	
+}
+
+.overlay {
+    background: black;
+    opacity: 0.7;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 3.2rem;
+}
+
+.modal-close:before {
+    position: relative;
+    top: -1px;
+    content: "close";
+    font-size: 2.5rem;
+}
+
+.modal-window {
+	font-size: 2.5rem;
+	color: #fafafa;
+}
+	/*Modal Window END*/
+	
 @media (max-width: 767px) {
     .section-header .container {
         -webkit-box-pack: justify;

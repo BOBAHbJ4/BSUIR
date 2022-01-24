@@ -7,6 +7,8 @@
     <title>Диеты</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/diets.css">
+	<script src="../../assets/src/jquery.js"></script>
+    <script src="../../assets/src/main.js"></script>
 </head>
 
 <body>
@@ -26,11 +28,11 @@
                     <div class="line line-3"></div>
                 </div>
                 <div class="nav-list">
-                    <a class="nav-link" href="../../Index.html">Главная</a>
-                    <a class="nav-link" href="../products/products.html">Продукты</a>
-                    <a class="nav-link" href="../recipes/recipes.html">Рецепты</a>
-                    <a class="nav-link active" href="">Диеты</a>
-                    <a class="nav-link" href="../training/training.html">Тренировки</a>
+                    <a class="nav-link" href="../../Index.html"><img src="../../assets/icons/home.svg"><span class="icon">Главная</span></a>
+                    <a class="nav-link" href="../products/products.html"><img src="../../assets/icons/products.svg"><span class="icon">Продукты</span></a>
+                    <a class="nav-link" href="../recipes/recipes.html"><img src="../../assets/icons/receipts.svg"><span class="icon">Рецепты</span></a>
+                    <a class="nav-link" href="../diets/diets.html"><img src="../../assets/icons/diets.svg"><span class="icon">Диеты</span></a>
+                    <a class="nav-link" href="../training/training.html"><img src="../../assets/icons/trainings.svg"><span class="icon">Тренировки</span></a>
                 </div>
             </nav>
         </div>
@@ -43,44 +45,53 @@
               приятного похудения</div>
         <div class="training-slider">
             <div class="slider-item">
-                <img src="../../assets/images/proper_nutrition.jpg" alt="Proper nutrition" class="slider-item__img">
-                <div class="slider-item__nickname">Правильное питание</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/proper_nutrition.jpg" id="7" alt="Proper nutrition" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-7">Правильное питание</div>
+                <button class="slider-item__btn" data-pic-id="7" type="button"
+                            data-content="text for Proper nutrition...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/PFC.jpg" alt="PFC diet" class="slider-item__img">
-                <div class="slider-item__nickname">БЖУ диета</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/PFC.jpg" id="1" alt="PFC diet" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-1">БЖУ диета</div>
+                <button class="slider-item__btn" data-pic-id="1" type="button"
+				data-content="text for PFC diet...">Подробнее
+				</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/keto.jpg" alt="Keto Diet" class="slider-item__img">
-                <div class="slider-item__nickname">Кето диета</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/keto.jpg" id="2" alt="Keto Diet" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-2">Кето диета</div>
+                <button class="slider-item__btn" data-pic-id="2" type="button"
+                            data-content="text for Keto Diet...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/protein.jpg" alt="Protein diet" class="slider-item__img">
-                <div class="slider-item__nickname">Белковая диета</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/protein.jpg" id="3" alt="Protein diet" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-3">Белковая диета</div>
+                <button class="slider-item__btn" data-pic-id="3" type="button"
+                            data-content="text for Protein diet...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/kremlin.jpg" alt="The Kremlin Diet" class="slider-item__img">
-                <div class="slider-item__nickname">Кремлевская диета</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/kremlin.jpg" id="4" alt="The Kremlin Diet" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-4">Кремлевская диета</div>
+                <button class="slider-item__btn" data-pic-id="4" type="button"
+                            data-content="text for The Kremlin Diet...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/dukan.jpg" alt="The Dukan Diet" class="slider-item__img">
-                <div class="slider-item__nickname">Диета Дюкана</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/dukan.jpg" id="5" alt="The Dukan Diet" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-5">Диета Дюкана</div>
+                <button class="slider-item__btn" data-pic-id="5" type="button"
+				data-content="text for The Dukan Diet...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/Separate_meals.jpg" alt="Separate meals" class="slider-item__img">
-                <div class="slider-item__nickname">Раздельное питание</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/Separate_meals.jpg" id="6" alt="Separate meals" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-6">Раздельное питание</div>
+                <button class="slider-item__btn" data-pic-id="6" type="button"
+				data-content="text for Separate meals...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/сounting_calories.png" alt="Counting calories" class="slider-item__img">
-                <div class="slider-item__nickname">Подсчёт калорий</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/сounting_calories.png" id="8" alt="Counting calories" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-8">Подсчёт калорий</div>
+                <button class="slider-item__btn" data-pic-id="8" type="button"
+                            data-content="text for Counting calories...">Подробнее</button>
             </div>
         </div>
         <div class="slider-buttons">
@@ -99,7 +110,7 @@
         <div class="info">
             <div class="contact-info">
                 <div class="contact-info__title">Вопросы и предложения</div>
-                <a href="https://mail.google.com/" target="_blank" class="email-container footer-hover">
+                <a href="mailto:spysystems.87@gmail.com" target="_blank" class="email-container footer-hover">
                     <img class="email-container__icon" src="../../assets/icons/footer-mail.svg" alt="mail-icon">
                     <div class="email-container__email">proper_nutrition@email.ru</div>
                 </a>

@@ -7,7 +7,8 @@
     <title>health</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/src/main.css">
-
+	<script src="assets/src/jquery.js"></script>
+    <script src="assets/src/main.js"></script>
 </head>
 
 <body>
@@ -118,19 +119,22 @@
             <button class="training-slider__btn-left btn"><img src="assets/icons/arrow-left.svg"
                                                              alt="arrow-left"></button>
             <div class="slider-item">
-                <img src="assets/images/cardio.jfif" alt="cardio" class="slider-item__img">
-                <div class="slider-item__nickname">Кардио</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/cardio.jfif" id="1" alt="cardio" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-1">Кардио</div>
+                <button class="slider-item__btn" data-pic-id="1" type="button"
+                            data-content="text for cardio...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/strenght.jpg" alt="strenght" class="slider-item__img">
-                <div class="slider-item__nickname">Силовая</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/strenght.jpg" id="2" alt="strenght" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-2">Силовая</div>
+                <button class="slider-item__btn" data-pic-id="2" type="button"
+                            data-content="text for strenght...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="assets/images/combo.jfif" alt="combo" class="slider-item__img">
-                <div class="slider-item__nickname">Комбинированная</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="assets/images/combo.jfif" id="3" alt="combo" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-3">Комбинированная</div>
+                <button class="slider-item__btn" data-pic-id="3" type="button"
+                            data-content="text for combo...">Подробнее</button>
             </div>
             <button class="training-slider__btn-right btn"><img src="assets/icons/arrow-right.svg"
                                                               alt="arrow-right"></button>

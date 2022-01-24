@@ -81,7 +81,7 @@ h1 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 60px 0; }
+    padding: 30px 0; }
 
 .section-header .logo {
     display: -webkit-box;
@@ -141,6 +141,99 @@ h1 {
     color: #fafafa; }
 .section-header .nav-wrapper .nav-link:not(:first-child) {
     margin-left: 33px; }
+
+/*Иконки вместо текста меню*/
+ .nav-link {
+	position: inline-block;
+	float:left;
+	max-width:60px;
+    }
+.nav-list img {
+	margin-left: 30px
+	}
+	
+.icon{
+	font-size: 0;
+} 
+    a:hover .icon {		
+		font-size: 1.8rem;
+    }
+	.nav-list img {
+		max-height: 30px;
+		background:none;
+	}	
+        /*END*/
+		
+	/*Modal Window*/
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 600px;
+    margin-left: -300px;
+	margin-top: 100px;
+    padding: 10px;
+	overflow: auto;
+    border: solid 1px grey;
+    background: #66CCCC;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px black;
+	-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+    z-index: 1;
+}
+
+/* Добавить анимацию */
+@-webkit-keyframes animatetop {
+  from {top:-200px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-200px; opacity:0}
+  to {top:0; opacity:1}
+}
+/*Конец анимации*/
+
+.modal-window img {
+    width: 100%;
+}
+
+.overlay {
+    background: black;
+    opacity: 0.7;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 3.2rem;
+}
+
+.modal-close:before {
+    position: relative;
+    top: -1px;
+    content: "close";
+    font-size: 2.5rem;
+}
+
+.modal-window {
+	font-size: 2.5rem;
+	color: #fafafa;
+}
+	/*Modal Window END*/
 
 @media (max-width: 1279px) {
     .section-header .container {

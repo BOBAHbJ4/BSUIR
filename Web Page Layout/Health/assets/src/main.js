@@ -17,6 +17,13 @@ $(function () {
             modal.remove();
             $(".overlay").remove();
         }).appendTo(modal);
+		$(document).mouseup(function (event) {
+		if ($(".modal-window").has(event.target).length === 0){
+			event.preventDefault();
+			modal.remove();
+			$(".overlay").remove();
+		}
+		});
         var item=$("#item-"+id).text();
         var pic=$("#"+id).clone();
         var content=$(this).attr("data-content");
@@ -24,4 +31,5 @@ $(function () {
         modal.append(pic);
         modal.append(content);
     });
+	
 });

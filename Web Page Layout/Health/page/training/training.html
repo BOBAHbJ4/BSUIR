@@ -7,6 +7,8 @@
     <title>Виды тренировок</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./css/training.css">
+	<script src="../../assets/src/jquery.js"></script>
+    <script src="../../assets/src/main.js"></script>
 </head>
 
 <body>
@@ -26,11 +28,11 @@
                     <div class="line line-3"></div>
                 </div>
                 <div class="nav-list">
-                    <a class="nav-link" href="../../Index.html">Главная</a>
-                    <a class="nav-link" href="../products/products.html">Продукты</a>
-                    <a class="nav-link" href="../recipes/recipes.html">Рецепты</a>
-                    <a class="nav-link" href="../diets/diets.html">Диеты</a>
-                    <a class="nav-link active" href="training.html">Тренировки</a>
+                    <a class="nav-link" href="../../Index.html"><img src="../../assets/icons/home.svg"><span class="icon">Главная</span></a>
+                    <a class="nav-link" href="../products/products.html"><img src="../../assets/icons/products.svg"><span class="icon">Продукты</span></a>
+                    <a class="nav-link" href="../recipes/recipes.html"><img src="../../assets/icons/receipts.svg"><span class="icon">Рецепты</span></a>
+                    <a class="nav-link" href="../diets/diets.html"><img src="../../assets/icons/diets.svg"><span class="icon">Диеты</span></a>
+                    <a class="nav-link" href="#"><img src="../../assets/icons/trainings.svg"><span class="icon">Тренировки</span></a>
                 </div>
             </nav>
         </div>
@@ -43,44 +45,52 @@
              веса и не только</div>
         <div class="training-slider">
             <div class="slider-item">
-                <img src="../../assets/images/cardio.jfif" alt="CARDIO" class="slider-item__img">
-                <div class="slider-item__nickname">Кардио</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/cardio.jfif" id="1" alt="CARDIO" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-1">Кардио</div>
+                <button class="slider-item__btn" data-pic-id="1" type="button"
+                            data-content="text for CARDIO...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/strenght.jpg" alt="strenght" class="slider-item__img">
-                <div class="slider-item__nickname">Силовая</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/strenght.jpg" id="2" alt="strenght" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-2">Силовая</div>
+                <button class="slider-item__btn" data-pic-id="2" type="button"
+                            data-content="text for strenght...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/combo.jfif" alt="combo" class="slider-item__img">
-                <div class="slider-item__nickname">Комбинированная</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/combo.jfif" id="3" alt="combo" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-3">Комбинированная</div>
+                <button class="slider-item__btn" data-pic-id="3" type="button"
+                            data-content="text for combo...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/respiratory.jpg" alt="Respiratory" class="slider-item__img">
-                <div class="slider-item__nickname">Дыхательная</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/respiratory.jpg" id="4" alt="Respiratory" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-4">Дыхательная</div>
+                <button class="slider-item__btn" data-pic-id="4" type="button"
+                            data-content="text for Respiratory...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/yoga.png" alt="Yoga" class="slider-item__img">
-                <div class="slider-item__nickname">Йога</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/yoga.png" id="5" alt="Yoga" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-5">>Йога</div>
+                <button class="slider-item__btn" data-pic-id="5" type="button"
+					data-content="text for Йога...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/stretching.png" alt="Stretching" class="slider-item__img">
-                <div class="slider-item__nickname">Растяжка</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/stretching.png" id="6" alt="Stretching" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-6">Растяжка</div>
+                <button class="slider-item__btn" data-pic-id="6" type="button"
+					data-content="text for Stretching...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/pilates.png" alt="Pilates" class="slider-item__img">
-                <div class="slider-item__nickname">Пилатес</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/pilates.png" id="7" alt="Pilates" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-7">Пилатес</div>
+                <button class="slider-item__btn" data-pic-id="7" type="button"
+                            data-content="text for Pilates...">Подробнее</button>
             </div>
             <div class="slider-item">
-                <img src="../../assets/images/callanetics.png" alt="callanetics" class="slider-item__img">
-                <div class="slider-item__nickname">Калланетика</div>
-                <button class="slider-item__btn" type="button">Подробнее</button>
+                <img src="../../assets/images/callanetics.png" id="8" alt="callanetics" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-8">Калланетика</div>
+                <button class="slider-item__btn" data-pic-id="8" type="button"
+                            data-content="text for callanetics...">Подробнее</button>
             </div>
         </div>
         <div class="slider-buttons">
@@ -99,7 +109,7 @@
         <div class="info">
             <div class="contact-info">
                 <div class="contact-info__title">Вопросы и предложения</div>
-                <a href="https://mail.google.com/" target="_blank" class="email-container footer-hover">
+                <a href="mailto:spysystems.87@gmail.com" target="_blank" class="email-container footer-hover">
                     <img class="email-container__icon" src="../../assets/icons/footer-mail.svg" alt="mail-icon">
                     <div class="email-container__email">proper_nutrition@email.ru</div>
                 </a>
