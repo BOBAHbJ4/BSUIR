@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/src/main.css">
 	<script src="assets/src/jquery.js"></script>
+	<script src="assets/src/slider.js"></script>
     <script src="assets/src/main.js"></script>
+	<script src="assets/src/script.js"></script>
 </head>
 
 <body>
@@ -115,30 +117,64 @@
     <div class="container">
         <div class="section-weight_loss__title">Выберите подходящий <br>
             вариант тренировки</div>
-        <div class="training-slider">
-            <button class="training-slider__btn-left btn"><img src="assets/icons/arrow-left.svg"
+		<div class="slider-container">
+		<button class="training-slider__btn-left btn"><img src="assets/icons/arrow-left.svg"
                                                              alt="arrow-left"></button>
-            <div class="slider-item">
+        <div class="training-slider">
+			<div class="slider-track">
+				<div class="slider-item">
                 <img src="assets/images/cardio.jfif" id="1" alt="cardio" class="slider-item__img">
                 <div class="slider-item__nickname" id="item-1">Кардио</div>
                 <button class="slider-item__btn" data-pic-id="1" type="button"
                             data-content="text for cardio...">Подробнее</button>
-            </div>
-            <div class="slider-item">
+				</div>
+				<div class="slider-item">
                 <img src="assets/images/strenght.jpg" id="2" alt="strenght" class="slider-item__img">
                 <div class="slider-item__nickname" id="item-2">Силовая</div>
                 <button class="slider-item__btn" data-pic-id="2" type="button"
                             data-content="text for strenght...">Подробнее</button>
             </div>
-            <div class="slider-item">
+				<div class="slider-item">
                 <img src="assets/images/combo.jfif" id="3" alt="combo" class="slider-item__img">
                 <div class="slider-item__nickname" id="item-3">Комбинированная</div>
                 <button class="slider-item__btn" data-pic-id="3" type="button"
                             data-content="text for combo...">Подробнее</button>
             </div>
-            <button class="training-slider__btn-right btn"><img src="assets/icons/arrow-right.svg"
-                                                              alt="arrow-right"></button>
+				<div class="slider-item">
+                <img src="assets/images/respiratory.jpg" id="4" alt="respiratory" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-4">Дыхательная</div>
+                <button class="slider-item__btn" data-pic-id="4" type="button"
+                            data-content="text for respiratory...">Подробнее</button>
+            </div>
+				<div class="slider-item">
+                <img src="assets/images/yoga.png" id="5" alt="Yoga" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-5">Йога</div>
+                <button class="slider-item__btn" data-pic-id="5" type="button"
+                            data-content="text for Yoga...">Подробнее</button>
+            </div>
+				<div class="slider-item">
+                <img src="assets/images/stretching.png" id="6" alt="Stretching" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-6">Растяжка</div>
+                <button class="slider-item__btn" data-pic-id="6" type="button"
+                            data-content="text for Stretching...">Подробнее</button>
+				</div>
+				<div class="slider-item">
+                <img src="assets/images/pilates.png" id="7" alt="Pilates" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-7">Пилатес</div>
+                <button class="slider-item__btn" data-pic-id="7" type="button"
+                            data-content="text for Pilates...">Подробнее</button>
+				</div>
+				<div class="slider-item">
+                <img src="assets/images/callanetics.png" id="8" alt="callanetics" class="slider-item__img">
+                <div class="slider-item__nickname" id="item-8">Калланетика</div>
+                <button class="slider-item__btn" data-pic-id="8" type="button"
+                            data-content="text for callanetics...">Подробнее</button>
+				</div>
+			</div>		
         </div>
+		<button class="training-slider__btn-right btn"><img src="assets/icons/arrow-right.svg"
+                                                              alt="arrow-right"></button> 
+		</div>
         <form action="page/training/training.html">
             <button class="section-weight_loss__btn">Все виды тренировок</button>
         </form>

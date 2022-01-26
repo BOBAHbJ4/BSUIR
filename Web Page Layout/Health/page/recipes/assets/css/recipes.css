@@ -208,6 +208,10 @@ h1 {
     z-index: 1;
 }
 
+.modal-window img{
+	height: 600px;
+}
+
 /* Добавить анимацию */
 @-webkit-keyframes animatetop {
   from {top:-200px; opacity:0} 

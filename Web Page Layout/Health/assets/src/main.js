@@ -1,3 +1,4 @@
+
 $(function () {
     var fx = {
         "initModal": function () {
@@ -30,6 +31,5 @@ $(function () {
         modal.append(item);
         modal.append(pic);
         modal.append(content);
-    });
-	
+    });	
 });
