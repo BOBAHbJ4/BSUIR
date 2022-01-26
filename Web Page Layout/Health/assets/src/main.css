@@ -1,43 +1,41 @@
 @font-face {
     font-family: "Arial";
-    src: url("/assets/fonts/Arial-BoldMT.woff2") format("woff2"), url("/assets/fonts/Arial-BoldMT.woff") format("woff");
+    src: local("assets/fonts/arial-mt-bold.ttf");
     font-weight: bold;
     font-style: normal;
     font-display: swap; }
 
 @font-face {
     font-family: "Arial";
-    src: url("/assets/fonts/Arial-BoldItalicMT.woff2") format("woff2"), url("/assets/fonts/Arial-BoldItalicMT.woff") format("woff");
+    src: local("assets/fonts/arial-mt-italic.otf");
     font-weight: bold;
     font-style: italic;
     font-display: swap; }
 
 @font-face {
     font-family: "Arial";
-    src: url("/assets/fonts/ArialMT.woff2") format("woff2"), url("/assets/fonts/ArialMT.woff") format("woff");
+    src: local("assets/fonts/ARIALMT.ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap; }
 
 @font-face {
     font-family: "Arial";
-    src: url("/assets/fonts/Arial-ItalicMT.woff2") format("woff2"), url("/assets/fonts/Arial-ItalicMT.woff") format("woff");
+    src: local("assets/fonts/arial-mt-italic.otf");
     font-weight: normal;
     font-style: italic;
     font-display: swap; }
 
 @font-face {
     font-family: "Georgia";
-    src: url("assets/fonts/Georgia/Georgia-Bold.eot");
-    src: local("Georgia Bold"), local("Georgia-Bold"), url("assets/fonts/Georgia/Georgia-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Georgia/Georgia-Bold.woff2") format("woff2"), url("assets/fonts/Georgia/Georgia-Bold.woff") format("woff"), url("assets/fonts/Georgia/Georgia-Bold.ttf") format("truetype");
+    src: local("Georgia Bold"), local("assets/fonts/georgiab.ttf");
     font-weight: bold;
     font-style: normal;
     font-display: swap; }
 
 @font-face {
     font-family: "Georgia";
-    src: url("assets/fonts/Georgia/Georgia.eot");
-    src: local("Georgia"), url("assets/fonts/Georgia/Georgia.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Georgia/Georgia.woff2") format("woff2"), url("assets/fonts/Georgia/Georgia.woff") format("woff"), url("assets/fonts/Georgia/Georgia.ttf") format("truetype");
+    src: local("assets/fonts/Georgia/georgia.ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap; }
@@ -71,6 +69,7 @@
 	overflow: hidden;
 	top: 0; 
     width: 100%;
+    z-index: 10;
 	background: -webkit-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: -moz-linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208));
     background: linear-gradient(270deg, rgb(82, 179, 182) 52%, rgb(154, 207, 195), rgb(237, 242, 208))	
@@ -148,7 +147,6 @@
 
   /*Иконки вместо текста меню*/
  .nav-link {
-	position: inline-block;
 	float:left;
 	max-width:60px;
     }
@@ -257,7 +255,7 @@
 }
 
 .rad-input:checked~.rad-text {
-  color: #fff8f8);
+  color: #fff8f8;
 }
 		/*END RADIObtn*/
 		/*checkbox*/
@@ -350,8 +348,8 @@ option {
 	-webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
-    z-index: 1;
+    animation-duration: 0.4s;
+    z-index: 12;
 }
 
 /* Добавить анимацию */
@@ -367,7 +365,6 @@ option {
 /*Конец анимации*/
 .modal-window img {
     width: 100%;
-	
 }
 
 .overlay {
@@ -378,6 +375,7 @@ option {
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 11;
 }
 
 .modal-close {
@@ -531,20 +529,6 @@ option {
     .nav-list img {
         max-height: 0;
         }
-        /* Кнопка выпадающего списка */
- .dropbtn {
-    background-color: none;
-    color: #1c0049;
-    margin-left: 0;
-    font-size: 1.3rem;
-    border: none;
-  }
-  .dropbtn:hover {
-    font-size: 1.5rem; 
-  }
-  .dropdown-content a {
-    display: none;    
-  }
 
   /*!!!!!!!END!!!!!*/
 }
