@@ -50,39 +50,40 @@
                     полезных веществ. Питаясь правильно, можно сбросить лишний вес и улучшить общее самочувствие.
                     Также мы можем предложить вам различные удобные для вас планы питания.</div>
                 <button class="slim_figure-inner__button" type="button">Получить план
-                    <form name="form" action="mail.php" method="post" id="form_message">
+                    <form name="form" action="/assets/src/mail.php" method="post" id="form_message">
                         <p> <div class="titles">NAME*</div> <input class="input" name="name" type="text"/> </p>
                         <p> <div class="titles">e-mail*</div> <input class="input" name="email" type="text"/> </p> 
 							<label class="rad-label">
-							<input type="radio" class="rad-input" name="rad">
+							<input type="radio" class="rad-input" value="male" name="sex">
 							<div class="rad-design"></div>
 							<div class="rad-text">Male</div>
 							</label>
 							<label class="rad-label">
-							<input type="radio" class="rad-input" name="rad">
+							<input type="radio" class="rad-input" value="female" name="sex">
 							<div class="rad-design"></div>
 							<div class="rad-text">Female</div>
 							</label>
 						<div class="checkbox">
-							<input class="custom-checkbox" type="checkbox" id="plan" name="plan" value="plan">
+							<input class="custom-checkbox" type="checkbox" id="plan" name="theme" value="plan">
 							<label for="plan">План питания</label>
 						</div>
 
 						<div class="checkbox">
-							<input class="custom-checkbox" type="checkbox" id="sport" name="sport" value="sport">
+							<input class="custom-checkbox" type="checkbox" id="sport" name="theme" value="sport">
 							<label for="sport">Упражнения</label>
 						</div>
 
 						<div class="checkbox">
-							<input class="custom-checkbox" type="checkbox" id="combo" name="combo" value="combo">
+							<input class="custom-checkbox" type="checkbox" id="combo" name="theme" value="combo">
 							<label for="combo">Комплекс</label>
 						</div>
-                        <p> <div class="titles">Subject</div> 
-							<select><option>Вопрос по плану питания</option>
-									<option>Вопрос по тренировкам</option>
-									<option>Вопрос по комплексному плану</option>
-									<option>Другое</option>
-							</select>
+                        <p> Subject
+                            <select class="titles" name="subject">
+							        <option value="plan pit">Вопрос по плану питания</option>
+									<option value="trainings">Вопрос по тренировкам</option>
+									<option value="combo plan">Вопрос по комплексному плану</option>
+									<option value="other">Другое</option>
+                        </select>
 						</p>
                         <p> <div class="titles">Message:</div><textarea name="message" cols="22" rows="3" /></textarea></p>
                         <p><input id="submit" value="Отправить" type="submit" /></p>
