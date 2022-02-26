@@ -7,4 +7,4 @@ js,html,css,jQuery
 # Autors
 MincevichVV
 
-[link](https://bobahbj4.github.io/BSUIR/Web%20Page%20Layout/Health/Index.php) </br>
+[link](https://bobahbj4.github.io/BSUIR/Web%20Page%20Layout/Health/Index.html) </br>
