@@ -1,20 +1,18 @@
 # Web Page Layout.
-> JavaScript basics: syntax and semantics; programming paradigms and basic principles of algorithmization; basic programming techniques. JavaScript templates: application of the basic API; application of the Web API; design of client web applications; development of individual components of client web applications. Tools, libraries and frameworks: fundamentals of application in the development of client web applications.
-## The project is rewritten in php, a local OpenServer with a phpmyadmin database is used as the server.
+> JavaScript basics: syntax and semantics; programming paradigms and basic principles of algorithmization; basic programming techniques. JavaScript templates: application of the basic API; application of the Web API; design of client web applications; development of individual components of client web applications. Tools, libraries and frameworks: fundamentals of application in the development of client web applications.</br>
 
 [LINK](https://bobahbj4.github.io/BSUIR/Web%20Page%20Layout/Health/Index.html)
 _____________________
 
 # Технологии 
-js,html,css,jQuery
+**JS, HTML, CSS, JQUERY**
 # Информация по установке
 - git clone https://github.com/BOBAHbJ4/BSUIR/tree/main/Web%20Page%20Layout/Health
+
 # Autors
-MincevichVV
-
-[link](https://bobahbj4.github.io/BSUIR/Web%20Page%20Layout/Health/Index.html) </br>
-
-### js code example Modal window
+**MincevichVV**
+________________
+#### HTML code example
 ```html
 <!DOCTYPE html>
 <html lang="ru">
