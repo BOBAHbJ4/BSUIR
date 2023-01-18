@@ -1,5 +1,6 @@
 # Web Page Layout.
-> JavaScript basics: syntax and semantics; programming paradigms and basic principles of algorithmization; basic programming techniques. JavaScript templates: application of the basic API; application of the Web API; design of client web applications; development of individual components of client web applications. Tools, libraries and frameworks: fundamentals of application in the development of client web applications.
+> Basic information about Web applications, Web services. Architecture of Web applications of Web services. Designing Web applications. Design of site management systems. Database design for Web applications and Web services. Features of writing Web application code. Introduction to the XML language, the basic mechanisms of the language. The structure and content of the XML document. Namespace. XSL, XSLT as a means to represent and transform data in XML format.Fundamentals of security in the development of Web sites. Features of the use of frameworks in the development of site management systems.
+
 ## The project is rewritten in php, a local OpenServer with a phpmyadmin database is used as the server.
 
 [OLD PROJECT](https://bobahbj4.github.io/BSUIR/Web%20Page%20Layout/Health/Index.html)
