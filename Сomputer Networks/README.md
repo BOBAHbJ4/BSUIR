@@ -1,0 +1,2 @@
+# Computer graphics.
+> Generalized structure of a computer network. Classification of computer networks. Transmission medium. Open systems interaction model, standards. The concept of a protocol, a protocol stack. Network devices. Definition of the Internet, the concept and types of services.TCP/IP protocol stack. Addressing on the Internet. Subnets, the formation of a subnet mask.Methods of connecting to the Internet. The concept of a domain name, registration operations.
