@@ -1,3 +1,3 @@
-# Web application development.
-> Basic information about Web applications, Web services. Architecture of Web applications of Web services. Designing Web applications. Design of site management systems. Database design for Web applications and Web services. Features of writing Web application code. Introduction to the XML language, the basic mechanisms of the language. The structure and content of the XML document. Namespace. XSL, XSLT as a means to represent and transform data in XML format.Fundamentals of security in the development of Web sites. Features of the use of frameworks in the development of site management systems.
-![Illustration for the project]()
+# Web Page Layout.
+> JavaScript basics: syntax and semantics; programming paradigms and basic principles of algorithmization; basic programming techniques. JavaScript templates: application of the basic API; application of the Web API; design of client web applications; development of individual components of client web applications. Tools, libraries and frameworks: fundamentals of application in the development of client web applications.
+![Illustration for the project](https://github.com/BOBAHbJ4/BSUIR/blob/main/Web%20Page%20Layout/view.gif)
