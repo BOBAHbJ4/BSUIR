@@ -1,0 +1,3 @@
+# Web application development.
+> Basic information about Web applications, Web services. Architecture of Web applications of Web services. Designing Web applications. Design of site management systems. Database design for Web applications and Web services. Features of writing Web application code. Introduction to the XML language, the basic mechanisms of the language. The structure and content of the XML document. Namespace. XSL, XSLT as a means to represent and transform data in XML format.Fundamentals of security in the development of Web sites. Features of the use of frameworks in the development of site management systems.
+![Illustration for the project]()
