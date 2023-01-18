@@ -1,0 +1,4 @@
+# Testing web applications.
+> Basics of creating and using web services and web services. Introduction to testing web services and web services. Choosing a testing automation strategy. A test plan as a basis for testing web services and web services.
+![Illustration for the project](https://disk.yandex.ru/client/disk/%D0%BE%D0%B1%D1%89%D0%B0%D1%8F/video/%D0%9A%D0%BE%D1%81%D0%B0%D0%BA/%D0%9B%D0%B0%D0%B1%201?idApp=client&dialog=slider&idDialog=%2Fdisk%2F%D0%BE%D0%B1%D1%89%D0%B0%D1%8F%2Fvideo%2F%D0%9A%D0%BE%D1%81%D0%B0%D0%BA%2F%D0%9B%D0%B0%D0%B1%201%2F1.jpg)
+![Illustration for the project](https://disk.yandex.ru/client/disk/%D0%BE%D0%B1%D1%89%D0%B0%D1%8F/video/%D0%9A%D0%BE%D1%81%D0%B0%D0%BA/%D0%9B%D0%B0%D0%B1%202?idApp=client&dialog=slider&idDialog=%2Fdisk%2F%D0%BE%D0%B1%D1%89%D0%B0%D1%8F%2Fvideo%2F%D0%9A%D0%BE%D1%81%D0%B0%D0%BA%2F%D0%9B%D0%B0%D0%B1%202%2F2.jpg)
