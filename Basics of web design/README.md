@@ -1,0 +1,2 @@
+# Fundamentals of visual design of Web projects.
+> In this subject, we studied graphic design in the culture of modern communications. Visual perception of graphic objects. Human color vision. Fundamentals of color science. Psychophysics. Colorimetry. Terminology of color perception models. Color coordinates of the system. Phenomena of color perception. Basic concepts of composition. Means of composition.

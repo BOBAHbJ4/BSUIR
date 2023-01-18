@@ -1,0 +1,2 @@
+# Internet marketing.
+> Goals and objectives of Internet marketing. Marketing research on the Internet.  Characteristics of the Internet audience, segmentation of site visitors. Internet marketing complex. Tools of an Internet marketer.
