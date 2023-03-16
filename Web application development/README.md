@@ -5,7 +5,8 @@
 _____________________
 
 # Технологии 
-**JS, PHP, CSS, JQUERY,**
+**JS, PHP, CSS**
+
 # Информация по установке
 - git clone https://github.com/BOBAHbJ4/BSUIR/tree/main/Web%20Page%20Layout/Health
 
