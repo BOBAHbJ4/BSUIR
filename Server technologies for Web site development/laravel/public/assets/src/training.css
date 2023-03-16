@@ -1,45 +1,3 @@
-    @font-face {
-    font-family: "Arial";
-    src: url("../fonts/Arial-BoldMT.woff2") format("woff2"), url("../fonts/Arial-BoldMT.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; }
-
-@font-face {
-    font-family: "Arial";
-    src: url("../fonts/Arial-BoldItalicMT.woff2") format("woff2"), url("../fonts/Arial-BoldItalicMT.woff") format("woff");
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap; }
-
-@font-face {
-    font-family: "Arial";
-    src: url("../fonts/ArialMT.woff2") format("woff2"), url("../fonts/ArialMT.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; }
-
-@font-face {
-    font-family: "Arial";
-    src: url("../fonts/Arial-ItalicMT.woff2") format("woff2"), url("../fonts/Arial-ItalicMT.woff") format("woff");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap; }
-
-@font-face {
-    font-family: "Georgia";
-    src: url("../fonts/Georgia.woff2") format("woff2"), url("../fonts/Georgia.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; }
-
-@font-face {
-    font-family: "Georgia";
-    src: url("../fonts/Georgia-Bold.woff2") format("woff2"), url("../fonts/Georgia-Bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap; }
-
 h1 {
     margin: 0;
     padding: 0; }
@@ -143,25 +101,25 @@ h1 {
     margin-left: 33px; }
 
 /*Иконки вместо текста меню*/
- .nav-link {
-	position: inline-block;
-	float:left;
-	max-width:60px;
-    }
-.nav-list img {
-	margin-left: 30px
-	}
 
-.icon{
-	font-size: 0;
+.nav-link {
+    float: left;
+    max-width: 60px;
 }
-    a:hover .icon {
-		font-size: 1.8rem;
-    }
-	.nav-list img {
-		max-height: 30px;
-		background:none;
-	}
+
+.nav-link img {
+    margin-left: 30px;
+    height: 30px;
+    background: none;
+}
+
+.icon {
+    font-size: 0;
+}
+
+a:hover .icon {
+    font-size: 1.8rem;
+}
         /*END*/
 
 	/*Modal Window*/
@@ -182,7 +140,7 @@ h1 {
 	-webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
     z-index: 1;
 }
 
@@ -450,14 +408,7 @@ h1 {
         line-height: 130%;
         letter-spacing: 0.06em;
         margin-bottom: 42px; }
-    .section-training .training-slider {
-        row-gap: 30px;
-        margin-bottom: 3px; }
-    .section-training .training-slider .slider-item:nth-child(2n) {
-        display: none; }
-    .section-training .slider-buttons .btn:nth-child(2n) {
-        margin: 0 10px; } }
-        margin: 0 0 40px 0; }
+
     .section-footer .info .contact-info__title {
         text-align: center; }
     .section-footer .info .contact-info .email-container {

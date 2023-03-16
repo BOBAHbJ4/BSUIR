@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <title>health</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" src="assets/src/main.css">
 
     <script src="assets/src/jquery.js"></script>
     <script src="assets/src/main.js"></script>
@@ -37,7 +36,10 @@
                             class="icon">Рецепты</span></a>
                     <a class="nav-link" href="{{asset('/diets')}}"><img src="assets/icons/diets.svg"><span
                             class="icon">Диеты</span></a>
-                    <a class="nav-link" href="{{asset('/trainings')}}"><img src="assets/icons/trainings.svg"><span class="icon">Тренировки</span></a>
+                    <a class="nav-link" href="{{asset('/trainings')}}"><img src="assets/icons/trainings.svg"><span
+                                class="icon">Тренировки</span></a>
+                    <a class="nav-link" href="{{asset('/review')}}"><img src="assets/icons/finger_good.svg"><span
+                                class="icon">Отзывы</span></a>
                 </div>
             </nav>
         </div>
